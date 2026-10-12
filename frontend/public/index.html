@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронирование переговорных комнат</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Система бронирования переговорных комнат</h1>
+        <nav class="tabs">
+            <button class="tab-btn active" onclick="switchTab('bookings')">Бронирования</button>
+            <button class="tab-btn" onclick="switchTab('rooms')">Переговорные</button>
+            <button class="tab-btn" onclick="switchTab('employees')">Сотрудники</button>
+            <button class="tab-btn" onclick="switchTab('departments')">Отделы</button>
+        </nav>
+
+        <main id="content">
+            <!-- Динамический контент загружается через app.js -->
+        </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

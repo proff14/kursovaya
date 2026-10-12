@@ -1,0 +1,35 @@
+openapi: 3.0.3
+info:
+  title: Room Booking API
+  version: 1.0.0
+  description: API сервиса бронирования переговорных комнат
+paths:
+  /api/departments:
+    get:
+      summary: Получение списка отделов
+      responses:
+        '200':
+          description: Успешный ответ
+  /api/employees:
+    get:
+      summary: Получение списка сотрудников
+      responses:
+        '200':
+          description: Успешный ответ
+  /api/rooms:
+    get:
+      summary: Получение списка переговорных комнат
+      responses:
+        '200':
+          description: Успешный ответ
+  /api/bookings:
+    get:
+      summary: Получение списка бронирований
+      responses:
+        '200':
+          description: Успешный ответ
+    post:
+      summary: Создание нового бронирования
+      responses:
+        '201':
+          description: Бронирование создано
